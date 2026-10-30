@@ -50,6 +50,7 @@ func commands() []command {
 		{"sessions", []string{"resume"}, "Sessions", "ctrl+o", (*session).sessions},
 		{"continue", []string{"compact"}, "Continue in a new session", "", (*session).carryOn},
 		{"config", nil, "Config for a new session", "", (*session).config},
+		{"effort", nil, "Reasoning effort", "", (*session).config},
 		{"rename", nil, "Rename the session", "", (*session).renameDialog},
 		{"model", nil, "Model for a new session", "", (*session).models},
 		{"providers", []string{"connect"}, "Connect a provider", "", (*session).providers},
